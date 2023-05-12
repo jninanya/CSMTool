@@ -8,7 +8,7 @@
 #' @param yp Column name of the yield data of potential condition.
 #' @param data A data frame.
 #'
-#' @details Use \code{inv = TRUE} only for the SSI and TOL indices.
+#' @details Use \code{inv = TRUE} in the ThiryScore function only for the SSI and TOL indices.
 #'
 #' @return It returns a list including:
 #' \itemize{\code{indexes}} A data frame of the drought stress indexes SSI, TOL, MP, GMP, and STI.
