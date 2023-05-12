@@ -1,0 +1,12 @@
+Package: CSMTool
+Type: Package
+Title: Crop Screening Method
+Version: 0.1.0
+Author: Johan Ninanya, Javier Rinza
+Maintainer: Johan Ninanya <ninanyat.jl@gmail.com>
+Description: CSMTool helps us to perform a crop screening based on 
+  productivity and resistance indices following the Thiry's methodology.
+License: GPL (>= 3)
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.2.3
