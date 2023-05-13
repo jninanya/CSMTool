@@ -46,6 +46,7 @@
 # capacity index according to Thiry's metodology    #
 #===================================================#
 Thiry <- function(id, ys, yp, data){
+
   ys=data$ys
   yp=data$yp
 

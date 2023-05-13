@@ -2,4 +2,8 @@
 
 export(Thiry)
 export(ThiryScore)
+export(plot_pca)
+importFrom(FactoMiner,HCPC)
+importFrom(FactoMiner,PCA)
+importFrom(basicPlotteR,addTextLabels)
 importFrom(stats,cor)

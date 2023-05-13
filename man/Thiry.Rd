@@ -30,7 +30,7 @@ This function calculates the productivity and resilience capacity
 following Thiry et al. (2016).
 }
 \details{
-Use \code{inv = TRUE} only for the SSI and TOL indices.
+Use \code{inv = TRUE} in the ThiryScore function only for the SSI and TOL indices.
 }
 \examples{
 n <- 20
