@@ -19,10 +19,10 @@ plot_pca(res.pca, res.hcpc, show_pca = c("var", "ind", "both"), plot = TRUE)
 This function plot the results of the PCA and clustering analysis.
 }
 \examples{
-plot_pca(res.pca, res.hcpc, show_pca = "var")
-plot_pca(res.pca, res.hcpc, show_pca = "ind")
-plot_pca(res.pca, res.hcpc, show_pca = "both")
-
+x=1
+}
+\seealso{
+\code{Thiry}
 }
 \author{
 Johan Ninanya, Javier Rinza

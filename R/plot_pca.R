@@ -9,15 +9,11 @@
 #'
 #' @author Johan Ninanya, Javier Rinza
 #'
-#'
+#' @seealso \code{Thiry}
 #'
 #' @examples
-#' plot_pca(res.pca, res.hcpc, show_pca = "var")
-#' plot_pca(res.pca, res.hcpc, show_pca = "ind")
-#' plot_pca(res.pca, res.hcpc, show_pca = "both")
-#'
-#' @importFrom FactoMiner PCA HCPC
-#' @importFrom basicPlotteR addTextLabels
+#' x=1
+#' @importFrom graphics abline arrows legend par text
 #' @export
 
 plot_pca <- function(res.pca,
@@ -53,8 +49,8 @@ plot_pca <- function(res.pca,
          ylab = paste0("Comp. 2 (", comp2, " %)"))
 
     arrows(0, 0, var[,1], var[,2], col = "red", lwd = 1.5)
-    addTextLabels(var[,1], var[,2], rownames(var), col.label = "red", cex.label = 1.2)
-    #text(var[,1], var[,2], rownames(var), pos = 3, cex = 1.2)
+    #addTextLabels(var[,1], var[,2], rownames(var), col.label = "red", cex.label = 1.2)
+    text(var[,1], var[,2], rownames(var), pos = 3, cex = 1.2)
     abline(v=0,h=0,col = "gray50", lty = 2)
 
   }
@@ -71,7 +67,7 @@ plot_pca <- function(res.pca,
          xlab = paste0("Comp. 1 (", comp1, " %)"),
          ylab = paste0("Comp. 2 (", comp2, " %)"))
 
-    addTextLabels(ind[,1], ind[,2], labels = rownames(ind), col.label = xcolor, cex.label = 0.7, col.line = "gray80", lwd = 1, lty = 2)
+    #addTextLabels(ind[,1], ind[,2], labels = rownames(ind), col.label = xcolor, cex.label = 0.7, col.line = "gray80", lwd = 1, lty = 2)
     text(ind[,1], ind[,2], rownames(ind), cex = 0.7, col = xcolor)
 
     abline(v=0,h=0,col = "gray50", lty = 2)
@@ -99,8 +95,8 @@ plot_pca <- function(res.pca,
          xlab = paste0("Comp. 1 (", comp1, " %)"),
          ylab = paste0("Comp. 2 (", comp2, " %)"))
 
-    addTextLabels(ind[,1], ind[,2], labels = rownames(ind), col.label = xcolor, cex.label = 0.7, col.line = "gray80", lwd = 1, lty = 2)
-    #text(ind[,1], ind[,2], rownames(ind), cex = 0.7, col = xcolor)
+    #addTextLabels(ind[,1], ind[,2], labels = rownames(ind), col.label = xcolor, cex.label = 0.7, col.line = "gray80", lwd = 1, lty = 2)
+    text(ind[,1], ind[,2], rownames(ind), cex = 0.7, col = xcolor)
 
     abline(v=0,h=0,col = "gray50", lty = 2)
 
@@ -118,12 +114,10 @@ plot_pca <- function(res.pca,
          xlab = "", ylab = "")
 
     arrows(0, 0, var[,1], var[,2], col = "red", lwd = 1.5)
-    addTextLabels(var[,1], var[,2], rownames(var), col.label = "red", cex.label = 1.2)
-    #text(var[,1], var[,2], rownames(var), pos = 3, cex = 1.2, col = "red")
-
+    #addTextLabels(var[,1], var[,2], rownames(var), col.label = "red", cex.label = 1.2)
+    text(var[,1], var[,2], rownames(var), pos = 3, cex = 1.2, col = "red")
 
   }
-
 
 }
 

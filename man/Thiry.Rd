@@ -21,7 +21,7 @@ It returns a list including:
 \itemize{\code{scores}} A data frame of the Thiry's scores.
 \itemize{\code{corr1.}} A matrix of Pearson correlation among the drought stress indexes and the Thiry's scores.
 \itemize{\code{range}} A list object with the range of the Thiry's scores SSI, TOL, MP, GMP, and STI.
-\itmeize{\code{comb1.}} A data frame of combinations of the Thiry's scores.
+\itemize{\code{comb1.}} A data frame of combinations of the Thiry's scores.
 \itemize{\code{corr2.}} A matrix of Pearson correlation among Thiry's combinations and the yield data (ys and yp).
 \itemize{\code{comb2.}} A data frame of the best Thiry's combination.
 }
